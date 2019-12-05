@@ -68,7 +68,7 @@ func _ready() -> void:
 			OS.current_screen = config_cache.get_value("window", "screen")
 		if config_cache.has_section_key("window", "maximized"):
 			OS.window_maximized = config_cache.get_value("window", "maximized")
-	
+
 		if !OS.window_maximized:
 			if config_cache.has_section_key("window", "position"):
 				OS.window_position = config_cache.get_value("window", "position")
@@ -539,5 +539,6 @@ func dim_window() -> void:
 	modulate = Color(0.5, 0.5, 0.5)
 
 func show_background_preview(button_pressed):
+	$VBoxContainer/HBoxContainer/ProjectsPane/Projects/DarkenPanel.visible = button_pressed	
 	$VBoxContainer/HBoxContainer/ProjectsPane/Preview3D.visible = button_pressed
 	$VBoxContainer/HBoxContainer/ProjectsPane/HBoxContainer/HBoxContainer.visible = button_pressed

@@ -16,17 +16,11 @@ margin_right = 352.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
 
-[node name="FilterLabel" type="Label" parent="HBoxContainer"]
-margin_top = 5.0
-margin_right = 37.0
-margin_bottom = 19.0
-text = "Filter:"
-
 [node name="Filter" type="LineEdit" parent="HBoxContainer"]
-margin_left = 41.0
 margin_right = 352.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
+placeholder_text = "Filter nodes"
 
 [node name="Tree" type="Tree" parent="."]
 margin_top = 28.0
